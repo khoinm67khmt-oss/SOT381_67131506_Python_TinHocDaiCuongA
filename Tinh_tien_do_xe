@@ -1,0 +1,27 @@
+#Tính tiền Đỗ xe: Tính tiền đỗ xe tại bãi giữ xe thông minh.
+#Nhập loại xe (“xe_may”, “o_to”) và số giờ đỗ (ví dụ: 2.5).
+#Logic:
+#Nếu là “xe_may”: 5.000đ cho 2 giờ đầu. Mỗi giờ tiếp theo là 2.000đ.
+#Nếu là “o_to”: 20.000đ cho giờ đầu tiên. Mỗi giờ tiếp theo là 15.000đ.
+#(Lưu ý: Bạn sẽ cần làm tròn số giờ lên, hoặc xử lý logic cho giờ lẻ).
+
+a=int(round(float(input("Nhap so gio do xe: "))))
+b=input("Nhap loai phuong tien (o_to hoac xe_may): ")
+c=" "
+if b == "xe_may": 
+  if a <= 2:
+    c = 5000 * a
+    print("So tien phai tra là: ",c)
+  else:
+    c = 10000 + (a-2) * 2000
+    print("So tien phai tra la: ",c)
+elif b == "o_to":
+  if a <= 1: 
+    c == 20000
+    print("So tien phai tra la: ")
+  else:
+    c = 20000 + (a-1) * 15000
+    print("So tien phai tra la: ",c)
+else:
+  print("Loai phuong tien khong hop le")
+  exit()
