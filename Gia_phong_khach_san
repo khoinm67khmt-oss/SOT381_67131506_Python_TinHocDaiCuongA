@@ -1,0 +1,32 @@
+#Giá phòng Khách sạn: Tính tiền phòng dựa trên loại phòng và số đêm.
+Nhập loại phòng (“Standard”, “Deluxe”, “Suite”) và số đêm.
+Giá cơ bản: Standard (1.000.000/đêm), Deluxe (1.500.000/đêm), Suite (2.500.000/đêm).
+Logic:
+Nếu ở trên 3 đêm, giảm 10
+Nếu ở 1-3 đêm, tính giá gốc.
+
+a=input("Nhap loai phong(Standard, Delxue, Suite): ").strip()
+if a == "Standard" or a == "Delxue" or a == "Suite":
+  b=int(round(float(input("Nhap so dem su dung phong: "))))
+  if b <= 0:
+    print("Co ve nhu so dem su dung ban nhap khong hop le hay thu nhap lai")
+  else:
+    if a == "Standard":
+      if 1 <= b <= 3:
+        c=1000000*b
+      else:
+        c=3000000+1000000*(10/100)*(b-3)
+    elif a == "Delxue":
+      if 1 <= b <= 3:
+        c = 1500000*b
+      else:
+        c=1500000*3+1500000*(10/100)*(b-3)
+    elif a == "Suite":
+      if 1 <= b <= 3:
+        c = 2500000*b
+      else:
+       c=2500000*3+2500000*(10/100)*(b-3)
+  print(f"So tien ban phai tra cho loai phong {a} trong {b} dem la: ",c)
+else:
+  print("Khach san khong co loai phong nay")
+  exit()
