@@ -1,0 +1,24 @@
+a = float(input("Nhập tổng thu nhập hàng tháng (triệu đồng): "))
+b = 11
+# b là mức giảm trừ cá nhân được nhà nước qui định
+c = int(input("Nhập số người phụ thuộc: "))
+d = 4.4 * c
+# d là tổng mức giảm trừ của người phụ thuộc (những người phụ thuộc vào tài chính của chủ thể)
+e = a - b - d
+# e là thu nhập chịu thuế
+if e <= 0:
+    print("Thue TNCN phai đong: 0 trieu dong")
+else:
+    f = 0 # Khởi tạo biến để cộng dồn
+# f là tổng số thuế phải nộp
+    h = e
+# h là bộ nhớ để xem phần nào chưa tính trong thuế
+    g = [(5, 0.05), (5, 0.1), (8, 0.15), (14, 0.2), (20, 0.25), (28, 0.3), (float('inf'), 0.35)]
+# b dùng lưu trữ các khung thuế
+    for limit, rate in g:
+        if h <= 0:
+            break
+        w = min(h, limit)
+        f += w * rate
+        h -= w
+    print(f"Thuế TNCN phải đóng: {f:.2f} triệu đồng/tháng")
