@@ -1,0 +1,25 @@
+#Giá vé Xe buýt: Viết chương trình tính giá vé xe buýt dựa trên đối tượng.
+#Nhập vào loại hành khách (chuỗi): “học sinh”, “sinh viên”, “người cao tuổi”, “thường”.
+#Giá vé:
+#“học sinh”: 3.000đ
+#“sinh viên”: 5.000đ
+#“người cao tuổi”: Miễn phí (0đ)
+#“thường”: 7.000đ
+
+
+a=input("Nhap vao loai hanh khach:").strip()
+if a in ["hoc sinh","sinh vien","nguoi cao tuoi","thuong"]:
+  if a == "hoc sinh":
+    print("Gia ve la: 3.000đ")
+  elif a == "sinh vien":
+    print("Gia ve la: 5.000đ")
+  elif a == "nguoi cao tuoi":
+    print("Gia ve la: 0đ(Mien phi) ")
+  else:
+    print("Gia ve la: 7.000đ")
+else:
+  print("Hinh nhu ban nhap sai vui long nhap lai")
+ 
+ 
+ 
+  
