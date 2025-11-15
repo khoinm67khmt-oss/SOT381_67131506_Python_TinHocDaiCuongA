@@ -1,0 +1,13 @@
+a = input("Tên của bạn: ")
+b = int(input("Cân nặng (kg): "))      
+c = float(input("Chiều cao (m): "))   
+d = b / (c ** 2)
+print(f"Chi so BMI của ban {a} la: {d}")
+print("Danh gia:")
+if d < 18.5:
+  print("Ban dang gay")
+elif d >= 25.0:
+  print("Ban dang thua can")
+else:
+  print("Ban hien dang binh thuong")
+ 
