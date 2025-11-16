@@ -1,0 +1,9 @@
+"""Logic: 
+>= 18 thì đủ tuổi bầu cử
+< 18 thì chưa đủ """
+
+a=int(input("Nhap tuoi cua ban: "))
+if a >= 18:
+  print("Ban du tuoi bau cu")
+else:
+  print("Ban chua du tuoi bau cu")
