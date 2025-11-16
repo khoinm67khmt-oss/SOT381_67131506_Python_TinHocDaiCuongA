@@ -1,0 +1,7 @@
+"""Nhập vào số giờ làm việc thực tế trong tuần và mức lương mỗi giờ.
+Giờ chuẩn là 40 giờ/tuần.
+Logic:
+Nếu số giờ làm <= 40: Lương = số giờ x mức lương
+Nếu số giờ làm > 40: Lương = 40 x mức lương + số giờ OT x mức lương x 1.5
+(Trong đó số giờ OT = số giờ làm việc - 40) """
+
