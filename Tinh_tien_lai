@@ -1,0 +1,10 @@
+import math
+a = int(float(input("Nhap so tien gui (Nghin dong): ")))
+b = int(float(input("Nhap lai suat (%/nam): ")))
+c = int(float(input("Nhap so thang gui: ")))
+thang = c
+d = math.ceil(thang)
+d = int(a * b * d) / 12
+e = f"{int(d):,}".replace(",", ".")
+print(f"Tien lai cua ban la: {e}.000 (VND)")
+
