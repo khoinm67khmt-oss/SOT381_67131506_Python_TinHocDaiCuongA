@@ -1,0 +1,5 @@
+a = int(float(input("Nhap so gio: ")))
+b = int(float(input("Nhap so phut: ")))
+c = int(float(input("Nhap so giay: ")))
+d = (3600 * a) + (60 * b) + c
+print(f"Tong so giay cua {a} gio, {b} phut và {c} giay la:{d} giay")
