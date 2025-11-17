@@ -1,0 +1,4 @@
+a = input("Nhap ho ten cua ban: ")
+b = int(input("Nhap tuoi cua ban: "))
+c = input("Nhap que quan cua ban: ")
+print(f"Xin chào, tôi tên là {a}, {b} tuổi, đến từ {c}")
