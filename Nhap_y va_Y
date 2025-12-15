@@ -3,3 +3,6 @@ while True:
     if n == "Y" or n == "y":
         print("Login succes")
         break
+    else:
+        print("Nhap lai")
+ 
