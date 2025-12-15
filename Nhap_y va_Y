@@ -1,0 +1,5 @@
+while True:
+    n = input("Nhap chu:")
+    if n == "Y" or n == "y":
+        print("Login succes")
+        break
