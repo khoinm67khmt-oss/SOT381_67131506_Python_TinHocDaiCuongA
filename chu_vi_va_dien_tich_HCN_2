@@ -1,0 +1,5 @@
+a = int(input("Nhap do dai HCN: "))
+b = int(input("Nhap chieu rong HCN:"))
+Chu_vi = (a + b)/2
+dien_tich = a * b
+print(f"Chu vi HCN la {Chu_vi} va dien tich HCN la {dien_tich}")
