@@ -1,0 +1,8 @@
+n = int(input("Nha so n: "))
+if n%2 == 0:
+    if n%3 == 0:
+        print("Day la so chan chia het cho 3")
+    else:
+        print("Chi la so chan")
+else:
+    print("Day khong phai so chan")
