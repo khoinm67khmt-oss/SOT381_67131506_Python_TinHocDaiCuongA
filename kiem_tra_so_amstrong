@@ -1,0 +1,13 @@
+n = int(input("Nhap so muon kiem tra: "))
+tong = 0
+k = len(str(n))
+l = n
+while l > 0:
+    h = l % 10
+    tong += h ** k
+    l //= 10
+if tong == n:
+    print(f"{n} la so amstrong")
+else:
+    print(f"{n} khong phai so amstrong")
+    
