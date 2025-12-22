@@ -1,0 +1,9 @@
+import math
+def tong(n):
+  k = 0.0
+  for i in range(n):
+    k = math.sqrt(3 + k)
+  return k
+n = int(input("Nhap n:"))
+print(tong(n))
+
