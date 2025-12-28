@@ -1,3 +1,4 @@
+# Viết chương trình in ra các số nguyên tố từ 1 đến n:
 import sys
 def liet_ke_so_nguyen_to_den_n(gia_tri_n):
     if gia_tri_n < 2:
